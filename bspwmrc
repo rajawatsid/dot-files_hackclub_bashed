@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # for sxhkd
-sxhkd &
+pgrep -x sxhkd >/dev/null || sxhkd &
 
 # appearance ranom
 bspc config border_width 2
@@ -29,12 +29,12 @@ killall -q polybar
 polybar mybar &
 
 # picom
-picom --config ~/.config/picom/picom.conf &
+pgrep -x picom >/dev/null || picom --config "$HOME/.config/picom/picom.conf" &
 
 ####### good looking stuff
 
 # wallpaper
-feh --bg-fill "~/Pictures/wallpapers/deathgod.png"
+feh --bg-fill "$HOME/Pictures/wallpapers/deathgod.png" &
 
 # conky
-conky -c ~/.config/conky/conkyrc &
+pgrep -x conky >/dev/null || conky -c "$HOME/.config/conky/conkyrc" &
