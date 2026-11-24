@@ -45,3 +45,6 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
     - [rofi GitHub by Davatorium](https://github.com/davatorium/rofi)
     - [rofi examples by Davatorium](https://github.com/davatorium/rofi/tree/next/Examples)
     - [rofi documentation by Davatorium](https://davatorium.github.io/rofi/CONFIG/)
+- polybar
+    - [polybar GitHub](https://github.com/polybar/polybar)
+    - [polybar docs](https://github.com/polybar/polybar/wiki)
