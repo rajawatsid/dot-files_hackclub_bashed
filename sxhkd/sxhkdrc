@@ -65,7 +65,7 @@ print
 
 # volume
 XF86AudioMute
-    amixer -D pulse sset Master Toggle
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86AudioLowerVolume
     pactl set-sink-volume @DEFAULT_SINK@ -5%
