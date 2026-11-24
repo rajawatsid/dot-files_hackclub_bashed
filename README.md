@@ -9,7 +9,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 
 ### This will contain:
 - bspwmrc : for bspwm
-- sxhkdrc : for sxhdrc
+- sxhkdrc : for sxhd
 - kitty.conf : for kitty terminal
 - config.ini : for polybar
 - picom.conf : for picom
@@ -18,4 +18,9 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 
 ### Sources used:
 - bspwm
-    - [bspwm GitHub](https://github.com/baskerville/bspwm)
+    - [bspwm GitHub by Baskerville](https://github.com/baskerville/bspwm)
+    - [Arch wiki for bspwm](https://wiki.archlinux.org/title/Bspwm)
+    - [bspwm examples by Baskerville](https://github.com/baskerville/bspwm/tree/master/examples)
+- sxhkd
+    - [sxhkd GitHub by Baskerville](https://github.com/baskerville/sxhkd)
+    - [sxhkd examples by Baskerville](https://github.com/baskerville/sxhkd/tree/master/examples)
