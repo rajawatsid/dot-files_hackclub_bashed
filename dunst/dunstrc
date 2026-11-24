@@ -103,7 +103,6 @@
     highlight = "#D4776C"
     timeout = 0
 
-
 [volume]
     appname = "volume"
     set_stack_tag = "volume"
