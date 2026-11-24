@@ -13,7 +13,7 @@ super + o
     rofi -show filebrowser
 
 # window switcher
-super + l
+super + tab
     rofi -show window
 
 # file browser
