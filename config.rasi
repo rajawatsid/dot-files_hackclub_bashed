@@ -10,7 +10,7 @@ configuration {
     display-filebrowser: "Files";
 
     filebrowser {
-        directory: "~/"
+        directory: "~/";
         sorting-method: "name";
         directories-first: true;
         show-hidden: false;

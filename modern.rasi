@@ -27,7 +27,7 @@ window {
     anchor:   center;
     y-offset: 0px;
     width:    580px;
-    background-colo: @bg;
+    background-color: @bg;
     border:        2px;
     border-color:  @line;
     border-radius: 14px;
