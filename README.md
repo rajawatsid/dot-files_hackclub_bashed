@@ -18,4 +18,4 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 
 ### Sources used:
 - bspwm
-    - (bspwm GitHub)[https://github.com/baskerville/bspwm]
+    - [bspwm GitHub](https://github.com/baskerville/bspwm)
