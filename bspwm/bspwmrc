@@ -25,8 +25,7 @@ bspc config gapless_monocle true
 bspc config click_to_focus any
 
 # polybar
-killall -q polybar
-polybar mybar &
+"$HOME/.config/polybar/launch.sh" &
 
 # picom
 pgrep -x picom >/dev/null || picom --config "$HOME/.config/picom/picom.conf" &
