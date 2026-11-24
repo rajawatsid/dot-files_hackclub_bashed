@@ -15,6 +15,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - picom.conf : for picom
 - dunstrc : for dunst
 - config.rasi : for rofi
+- lock.sh : for i3lock-color
 
 ## Requirenments (things to download)
 ### Essential

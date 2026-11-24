@@ -80,6 +80,6 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     brightnessctl set -10%
 
-# i3 lock-color
+# i3lock-color
 super + l
     ~/.config/i3lock/lock.sh
