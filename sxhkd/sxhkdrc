@@ -52,6 +52,10 @@ super + {1,2,3,4,5}
 super + shift + {1,2,3,4,5}
     bspc node -d '^{1,2,3,4,5}'
 
+# Move floating windows with arrow keys
+super + {Left,Down,Up,Right}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
 # expand window
 super + alt + {h,j,k,l}
     bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
