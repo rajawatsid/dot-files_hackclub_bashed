@@ -83,4 +83,3 @@ XF86MonBrightnessDown
 # i3 lock-color
 super + l
     ~/.config/i3lock/lock.sh
-
