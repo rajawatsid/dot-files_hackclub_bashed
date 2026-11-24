@@ -83,10 +83,10 @@ XF86AudioRaiseVolume
 
 # brightness
 XF86MonBrightnessUp
-    brightnessctl set +10%
+    brightnessctl -d amdgpu_bl1 set 10%+
 
 XF86MonBrightnessDown
-    brightnessctl set -10%
+    brightnessctl -d amdgpu_bl1 set 10%-
 
 # i3lock-color
 super + l
