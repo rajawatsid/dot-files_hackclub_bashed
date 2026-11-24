@@ -35,8 +35,12 @@ super + m
     bspc desktop -l next
 
 # floating
-super + f
+super + shift + f
     bspc node -t ~floating
+
+# full screen
+super + f
+    bspc node -t ~fullscreen
 
 ## desktop things
 
