@@ -8,7 +8,8 @@ bspc config border_width 2
 bspc config window_gap 7
 bspc focused_border_color "#ffb86c"
 bspc normal_border_color "#44475a"
-bspc focus_follows_pointer true
+bspc config focus_follows_pointer true
+bspc config pointer_follows_focus false
 
 # workspaces
 bspc monitor -d 1 2 3 4 5
