@@ -77,7 +77,7 @@ if ! command -v apt-get >/dev/null 2>&1; then
     exit 1
 fi
 
-# -------------------- Package definitions --------------------
+# ----------------------- package def -------------------------------
 
 # These are main things i'd want on desktop.
 # might split this list up more later if it gets too long.
@@ -183,8 +183,7 @@ select_packages() {
         fi
     done
 
-    # If a patched font is unavailable, install regular
-    # JetBrains Mono if the package exists.
+    # If a patched font is unavailable, install regular JetBrains Mono if the package exists.
     if [[ "$NERD_FONT_AVAILABLE" == false ]] &&
        package_available "fonts-jetbrains-mono"; then
         FONT_FALLBACK_AVAILABLE=true
@@ -216,7 +215,7 @@ install_packages() {
         return 0
     fi
 
-    # Refresh package availability using the updated package lists.
+    # Refresh package availability using the updated package lists
     AVAILABLE_PACKAGES=()
     UNAVAILABLE_PACKAGES=()
 
@@ -254,7 +253,7 @@ select_packages
 
 install_packages
 
-# -------------------- Configuration installation --------------------
+# config installation
 
 # now to putting the config folders in ~/.config.
 
@@ -416,7 +415,8 @@ if [[ ! -e /sys/class/backlight/amdgpu_bl1 ]]; then
     warn "The repository script has not been modified."
 fi
 
-# admin instruction
+
+
 
 if [[ "$CAN_INSTALL" == false ]]; then
     printf '\n'
