@@ -32,6 +32,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 * pactl
 * brightnessctl
 * i3lock-color
+* feh
 
 ### Sources used:
 - bspwm
@@ -53,3 +54,5 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
     - [dunst GitHub](https://github.com/dunst-project/dunst)
     - [dunst guide](https://github.com/dunst-project/dunst/wiki/Guides)
     - [dunst documentation](https://dunst-project.org/documentation/dunst/)
+- feh
+    - [wallpaper by soepratman on magnific.com](https://www.magnific.com/free-vector/abstract-paper-cut-green-background_418252745.htm#fromView=keyword&page=1&position=5&uuid=aa279933-32b1-485a-a991-06b6e698a193&track=ais_hybrid&query=Green+desktop+wallpapers)

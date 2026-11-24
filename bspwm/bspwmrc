@@ -36,7 +36,7 @@ pgrep -x picom >/dev/null || picom --config "$HOME/.config/picom/picom.conf" &
 ####### good looking stuff
 
 # wallpaper
-feh --bg-fill "$HOME/Pictures/wallpapers/deathgod.png" &
+feh --bg-fill "$HOME/.config/bspwm/wallpapers/green.jpg" &
 
 # conky
 pgrep -x conky >/dev/null || conky -c "$HOME/.config/conky/conkyrc" &
