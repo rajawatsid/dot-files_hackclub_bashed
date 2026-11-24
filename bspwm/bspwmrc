@@ -24,6 +24,9 @@ bspc config gapless_monocle true
 
 bspc config click_to_focus any
 
+# dont make cursor an X
+xsetroot -cursor_name left_ptr &
+
 # polybar
 "$HOME/.config/polybar/launch.sh" &
 
