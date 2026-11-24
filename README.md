@@ -16,6 +16,21 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - dunstrc : for dunst
 - config.rasi : for rofi
 
+## Requirenments (things to download)
+### Essential
+* bspwm
+* sxhkd
+* rofi
+* kitty
+* picom
+* dunst
+* polybar
+
+# Quality of Life
+* pactl
+* brightnessctl
+* i3lock-color
+
 ### Sources used:
 - bspwm
     - [bspwm GitHub by Baskerville](https://github.com/baskerville/bspwm)
