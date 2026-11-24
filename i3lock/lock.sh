@@ -46,8 +46,8 @@ i3lock \
     --time-pos="ix:iy-200" \
     --date-pos="ix:iy-155" \
     \
-    --verif-text="Verifying..." \
-    --wrong-text="Nahhhhhhh"
+    --verif-text="verifying..." \
+    --wrong-text="nahhhhhhh"
     --noinput-text=""
 
     --verif-color=F2F5E9

@@ -4,7 +4,7 @@
 pkill -USR1 -x sxhkd 2>/dev/null || sxhkd &
 
 #for dunst
-pkill -USR1 -x dunst 2>/dev/null || dunst &
+pkill -x dunst; dunst &
 
 # appearance ranom
 bspc config border_width 2

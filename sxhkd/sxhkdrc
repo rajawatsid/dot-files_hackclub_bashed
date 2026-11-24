@@ -13,7 +13,7 @@ super + o
     rofi -show filebrowser
 
 # window switcher
-super + tab
+super + Tab
     rofi -show window
 
 # file browser
@@ -68,18 +68,21 @@ super + alt + shift + {h,j,k,l}
 # this part has been shamelessly copied from my friends bspwm setup, atleast the XF86 one
 
 # screenshot
-print
-    mkdir -p "$HOME/Pictures/Screenshots" && flameshot gui -p "$HOME/Pictures/Screenshots" -d 0
+Print
+    mkdir -p "$HOME/Pictures/Screenshots" && flameshot gui -p "$HOME/Pictures/Screenshots" -d 0 &
 
 # volume
 XF86AudioMute
-    pactl set-sink-mute @DEFAULT_SINK@ toggle
+    ~/.config/bspwm/scripts/volume.sh mute
+#    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -5%
+    ~/.config/bspwm/scripts/volume.sh down
+#    pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +5%
+    ~/.config/bspwm/scripts/volume.sh up
+#    pactl set-sink-volume @DEFAULT_SINK@ +5%
 
 # brightness
 XF86MonBrightnessUp
