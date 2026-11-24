@@ -1,0 +1,86 @@
+# This is for the shortcuts
+
+# terminal
+super + return
+    kitty
+
+# program launcher
+super + d
+    rofi -show drun
+
+# file opener
+super + o
+    rofi -show filebrowser
+
+# window switcher
+super + l
+    rofi -show window
+
+# file browser
+super + alt + n
+    nemo
+
+# quit or restart bspwm
+super + alt + {q,r}
+    bspc {quit, wm -r}
+
+# close window
+super + w
+    bspc node -c
+
+## mode toggle
+
+# monocle
+super + m
+    bspc desktop -l next
+
+# floating
+super + f
+    bspc desktop -t ~floating
+
+## desktop things
+
+# switching desktops
+super + {1,2,3,4,5}
+    bspc desktop -f '^{1,2,3,4,5}'
+
+# move window to desktop
+super + shift + {1,2,3,4,5}
+    bspc node -d '^{1,2,3,4,5}'
+
+# expand window
+super + alt + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# give window contractions
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+##### something different, but can't label it yet
+# this part has been shamelessly copied from my friends bspwm setup, atleast the XF86 one
+
+# screenshot
+print
+    flameshot gui -p ~/Pictures/screenshots/ -d 0
+
+# volume
+XF86AudioMute
+    amixer -D pulse sset Master Toggle
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# brightness
+XF86MonBrightnessUp
+    brightnessctl set +10%
+
+XF86MonBrightnessDown
+    brightnessctl set -10%
+
+# i3 lock-color
+super + l
+    ~/.config/i3lock/lock.sh
+
