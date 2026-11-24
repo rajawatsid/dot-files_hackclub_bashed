@@ -57,6 +57,10 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - picom (used claude in figuring out how to make the black stuff in the corners dissappear)
     - [picom Github by yshui](https://github.com/yshui/picom)
     - [picom docs](https://picom.app/)
+- kitty
+    - [kitty GitHu by Kovidgoyal](https://github.com/kovidgoyal/kitty)
+    - [kitty documentation](https://sw.kovidgoyal.net/kitty/conf/)
+    - [this random reddit thread](https://www.reddit.com/r/KittyTerminal/comments/1dmpk30/need_a_decent_kittyconf_file/)
 
 
 
