@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # for sxhkd
-pgrep -x sxhkd >/dev/null || sxhkd &
+pkill -USR1 -x sxhkd 2>/dev/null || sxhkd &
 
 #for dunst
-pgrep -x dunst >/dev/null || dunst &
+pkill -USR1 -x dunst 2>/dev/null || dunst &
 
 # appearance ranom
 bspc config border_width 2
