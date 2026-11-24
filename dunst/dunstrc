@@ -5,7 +5,7 @@
     width = (280, 360)
     height = (0, 200)
     origin = top-right
-    offset = (40, 20)
+    offset = (18, 47)
     notification_limit = 5
     gap_size = 10
 
