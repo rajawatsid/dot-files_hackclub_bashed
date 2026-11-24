@@ -1,2 +1,40 @@
+#!/bin/bash
 
+# for sxhkd
+sxhkd &
 
+# appearance ranom
+bspc config border_width 2
+bspc config window_gap 7
+bspc focused_border_color "#ffb86c"
+bspc normal_border_color "#44475a"
+bspc focus_follows_pointer true
+
+# workspaces
+bspc monitor -d 1 2 3 4 5
+bspc config top_padding 24
+bspc config bottom_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
+
+# behavior
+bspc config split_ratio 0.5
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+bspc config click_to_focus any
+
+# polybar
+killall -q polybar
+polybar mybar &
+
+# picom
+picom --config ~/.config/picom/picom.conf &
+
+####### good looking stuff
+
+# wallpaper
+feh --bg-fill "~/Pictures/wallpapers/deathgod.png"
+
+# conky
+conky -c ~/.config/conky/conkyrc &
