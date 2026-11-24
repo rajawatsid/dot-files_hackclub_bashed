@@ -15,6 +15,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - picom.conf : for picom
 - dunstrc : for dunst
 - config.rasi : for rofi
+    - modern.rasi : for easier theme management
 - lock.sh : for i3lock-color
 
 ## Requirenments (things to download)
@@ -40,3 +41,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - sxhkd
     - [sxhkd GitHub by Baskerville](https://github.com/baskerville/sxhkd)
     - [sxhkd examples by Baskerville](https://github.com/baskerville/sxhkd/tree/master/examples)
+- rofi
+    - [rofi GitHub by Davatorium](https://github.com/davatorium/rofi)
+    - [rofi examples by Davatorium](https://github.com/davatorium/rofi/tree/next/Examples)
+    - [rofi documentation by Davatorium](https://davatorium.github.io/rofi/CONFIG/)
