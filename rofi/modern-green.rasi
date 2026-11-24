@@ -1,0 +1,139 @@
+/*
+ * olive green
+ */
+
+* {
+    bg:         #263321;
+    bg-alt:     #303E2A;
+    surface:    #394A31;
+    fg:         #E4EBD9;
+    fg-dim:     #A3B394;
+    accent:     #B9CC9B;
+    accent-bg:  #465A39;
+    line:       #526744;
+    urgent:     #D98278;
+
+    font: "JetBrainsMono Nerd Font 11";
+
+    background-color: transparent;
+    text-color:       @fg;
+    margin:  0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    location: center;
+    anchor: center;
+    y-offset: 0px;
+    width: 580px;
+    background-color: @bg;
+    border: 2px;
+    border-color: @line;
+    border-radius: 14px;
+}
+
+mainbox {
+    padding: 14px;
+    spacing: 12px;
+    children: [ inputbar, listview, mode-switcher ];
+}
+
+inputbar {
+    background-color: @surface;
+    border-radius: 10px;
+    padding: 11px 14px;
+    spacing: 10px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+    font: "JetBrainsMono Nerd Font Bold 11";
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: @fg-dim;
+    cursor-color: @accent;
+}
+
+listview {
+    lines: 7;
+    columns: 1;
+    fixed-height: true;
+    scrollbar: false;
+    spacing: 4px;
+    cycle: true;
+}
+
+element {
+    padding: 9px 12px;
+    spacing: 12px;
+    border-radius: 10px;
+    orientation: horizontal;
+}
+
+element-icon {
+    size: 1.4em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    highlight: bold #B9CC9B;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected.normal,
+element selected.active {
+    background-color: @accent-bg;
+    text-color: @accent;
+}
+
+element normal.active,
+element alternate.active {
+    text-color: @accent;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    text-color: @urgent;
+}
+
+element selected.urgent {
+    background-color: @urgent;
+    text-color: @bg;
+}
+
+mode-switcher {
+    spacing: 6px;
+}
+
+button {
+    padding: 8px;
+    horizontal-align: 0.5;
+    background-color: @bg-alt;
+    text-color: @fg-dim;
+    border-radius: 10px;
+}
+
+button selected {
+    background-color: @surface;
+    text-color: @accent;
+}
+
+message {
+    background-color: @bg-alt;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+textbox {
+    text-color: @fg-dim;
+}

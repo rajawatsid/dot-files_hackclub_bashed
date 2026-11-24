@@ -1,4 +1,4 @@
-@theme "modern"
+@theme "modern-green"
 configuration {
     modi: "drun,window,filebrowser";
     show-icons: true;
