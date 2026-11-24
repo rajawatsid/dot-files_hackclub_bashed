@@ -1,5 +1,5 @@
 # Hello there
-I'm particularly new to coding and have recently started
+I'm particularly new to coding (I know some basics) and have recently started
 I hope to get a lot of experience from this journey with hackclub
 
 This repository is made for the bashed hackclub program
@@ -48,3 +48,8 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - polybar
     - [polybar GitHub](https://github.com/polybar/polybar)
     - [polybar docs](https://github.com/polybar/polybar/wiki)
+    - bit's and pieces from [polybar-themes by adi1090x](https://github.com/adi1090x/polybar-themes)
+- dunst
+    - [dunst GitHub](https://github.com/dunst-project/dunst)
+    - [dunst guide](https://github.com/dunst-project/dunst/wiki/Guides)
+    - [dunst documentation](https://dunst-project.org/documentation/dunst/)
