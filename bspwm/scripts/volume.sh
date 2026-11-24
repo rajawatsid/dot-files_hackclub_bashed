@@ -1,6 +1,7 @@
 
 #!/usr/bin/env bash
 
+# basic up and down stuff for volume
 case "$1" in
     up)
         pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -16,9 +17,12 @@ case "$1" in
         ;;
 esac
 
+
+
 volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+(?=%)' | head -n 1)
 muted=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
 
+# dunst notification stuff
 if [ "$muted" = "yes" ]; then
     dunstify -a volume -u low \
         -h int:value:0 \

@@ -255,8 +255,6 @@ install_packages
 
 # config installation
 
-# now to putting the config folders in ~/.config.
-
 
 mkdir -p "$CONFIG_DIR"
 
@@ -299,7 +297,7 @@ install_config() {
         backup_destination "$destination"
 
     elif [[ -e "$destination" ]]; then
-        # Preserve existing user configurations
+    # Preserve existing user configurations
     # maybe ask before replacing these in a future version?
 
         backup_destination "$destination"
