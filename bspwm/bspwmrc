@@ -37,3 +37,11 @@ feh --bg-fill "$HOME/Pictures/wallpapers/deathgod.png" &
 
 # conky
 pgrep -x conky >/dev/null || conky -c "$HOME/.config/conky/conkyrc" &
+
+# touchpad making tap and all
+TOUCHPAD=$(xinput list --name-only | grep -iE 'touchpad|trackpad' | head -n1)
+
+if [ -n "$TOUCHPAD" ]; then
+    xinput set-prop "$TOUCHPAD" "libinput Tapping Enabled" 1
+    xinput set-prop "$TOUCHPAD" "libinput Natural Scrolling Enabled" 1
+fi
