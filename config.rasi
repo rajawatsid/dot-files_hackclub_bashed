@@ -1,0 +1,19 @@
+@theme "modern"
+configuration {
+    modi: "drun,window,filebrowser";
+    show-icons: true;
+    icon-theme: "Papirus";
+    
+    display-drun: "Apps";
+    display-run: "Run";
+    display-window: "Windows";
+    display-filebrowser: "Files";
+
+    filebrowser {
+        directory: "~/"
+        sorting-method: "name";
+        directories-first: true;
+        show-hidden: false;
+        command: "xdg-open";
+    }
+}
