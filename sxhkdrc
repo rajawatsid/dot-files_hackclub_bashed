@@ -36,7 +36,7 @@ super + m
 
 # floating
 super + f
-    bspc desktop -t ~floating
+    bspc node -t ~floating
 
 ## desktop things
 
@@ -61,7 +61,7 @@ super + alt + shift + {h,j,k,l}
 
 # screenshot
 print
-    flameshot gui -p ~/Pictures/screenshots/ -d 0
+    mkdir -p "$HOME/Pictures/screenshots" && flameshot gui -p "$HOME/Pictures/screenshots" -d 0
 
 # volume
 XF86AudioMute
