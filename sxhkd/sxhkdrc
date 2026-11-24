@@ -1,7 +1,7 @@
 # This is for the shortcuts
 
 # terminal
-super + return
+super + Return
     kitty
 
 # program launcher
