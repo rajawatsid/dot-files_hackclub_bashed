@@ -17,6 +17,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 - config.rasi : for rofi
     - modern.rasi : for easier theme management
 - lock.sh : for i3lock-color
+- conky.conf : for conky
 
 ## Requirenments (things to download)
 ### Essential
