@@ -42,7 +42,7 @@ packages=(
     rofi
     brightnessctl
     flameshot
-    conky
+    conky-all
     rsync
     git
 )
@@ -99,7 +99,10 @@ for folder in "${folders[@]}"; do
 
         echo "Backing up $folder..."
 
-        cp -a "$CONFIG_DIR/$folder" "$BACKUP_DIR/"
+        cp -a "$CONFIG_DIR/$folder" "$BACKUP_DIR/" || {
+            echo "failed to back up $folder, stopping so nothing gets overwritten"
+            exit 1
+        }
 
     fi
 
@@ -137,8 +140,17 @@ if [ "${#missing[@]}" -gt 0 ]; then
         echo "then run this script again as your normal user"
         exit 1
     else
-        sudo apt-get update
-        sudo apt-get install -y "${missing[@]}"
+        sudo apt-get update || {
+            echo "apt-get update failed, stopping"
+            exit 1
+        }
+        sudo apt-get install -y "${missing[@]}" || {
+            echo ""
+            echo "package install failed, stopping before any configs are copied"
+            echo "try running this by hand to see the error:"
+            echo "  $manual_cmd"
+            exit 1
+        }
     fi
 
 else
@@ -154,7 +166,10 @@ for folder in "${folders[@]}"; do
     if [ -d "$REPO_DIR/$folder" ]; then
 
         mkdir -p "$CONFIG_DIR/$folder"
-        rsync -av "$REPO_DIR/$folder/" "$CONFIG_DIR/$folder/"
+        rsync -av "$REPO_DIR/$folder/" "$CONFIG_DIR/$folder/" || {
+            echo "failed to copy $folder, stopping"
+            exit 1
+        }
 
         echo "Copied $folder"
 
