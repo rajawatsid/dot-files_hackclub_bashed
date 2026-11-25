@@ -28,6 +28,7 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 * picom
 * dunst
 * polybar
+* conky
 
 # Quality of Life
 * pactl
@@ -62,6 +63,10 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
     - [kitty GitHub by Kovidgoyal](https://github.com/kovidgoyal/kitty)
     - [kitty documentation](https://sw.kovidgoyal.net/kitty/conf/)
     - [this random reddit thread](https://www.reddit.com/r/KittyTerminal/comments/1dmpk30/need_a_decent_kittyconf_file/)
+- conky
+    - [conky on Github by brndmtthws](https://github.com/brndnmtthws/conky)
+    - [conky website](https://conky.cc/)
+    - [bits and pieces from this repo by erikdubois](https://github.com/erikdubois/Aureola)
 - i3lock-color
     -[i3lock-color by Raymo111](https://github.com/Raymo111/i3lock-color)
 
