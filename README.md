@@ -74,10 +74,12 @@ I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `s
 
 
 ## Seems important
+### Always latest release's install.sh
 ```
-# Always latest release's install.sh
 curl -fsSL https://github.com/rajawatsid/dot-files_hackclub_bashed/releases/latest/download/install.sh | bash
+```
 
-# Or straight from main
+### Or straight from main
+```
 curl -fsSL https://raw.githubusercontent.com/rajawatsid/dot-files_hackclub_bashed/main/install.sh | bash
 ```
