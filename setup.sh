@@ -8,6 +8,22 @@
 # maybe add colours or whatever later
 
 
+# dry-run support: run with ./setup.sh --dry-run
+DRY_RUN=0
+if [ "$1" = "--dry-run" ]; then
+    DRY_RUN=1
+    echo "=== DRY RUN: nothing will actually be changed ==="
+fi
+
+# helper: runs the command for real, or just prints it in dry-run mode
+run() {
+    if [ "$DRY_RUN" -eq 1 ]; then
+        echo "[dry-run] $*"
+    else
+        "$@"
+    fi
+}
+
 # variables
 REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_DIR="$HOME/.config"
