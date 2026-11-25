@@ -43,7 +43,7 @@ pgrep -x picom >/dev/null || picom --config "$HOME/.config/picom/picom.conf" &
 feh --bg-fill "$HOME/.config/bspwm/wallpapers/green.jpg" &
 
 # conky
-pgrep -x conky >/dev/null || conky -c "$HOME/.config/conky/conkyrc" &
+pgrep -x conky >/dev/null || conky -c "$HOME/.config/conky/conky.conf" &
 
 # touchpad making tap and all
 TOUCHPAD=$(xinput list --name-only | grep -iE 'touchpad|trackpad' | head -n1)
