@@ -121,24 +121,25 @@ done
 
 if [ "${#missing[@]}" -gt 0 ]; then
 
-    echo "Some packages are missing. Installing them..."
+    echo "Some packages are missing: ${missing[*]}"
 
-    if ! command -v sudo >/dev/null 2>&1; then
-        echo "sudo is not installed. Ask an administrator to install these packages:"
-        printf '  %s\n' "${missing[@]}"
+    # the command an admin (or you, once you have sudo) can run by hand
+    manual_cmd="apt-get update && apt-get install -y ${missing[*]}"
+
+    if [ "$DRY_RUN" -eq 1 ]; then
+        echo "[dry-run] would install: ${missing[*]}"
+    elif ! command -v sudo >/dev/null 2>&1 || ! sudo -v; then
+        echo ""
+        echo "couldn't get sudo permissions."
+        echo "ask an administrator to run this as root:"
+        echo "  $manual_cmd"
+        echo ""
         echo "then run this script again as your normal user"
         exit 1
+    else
+        sudo apt-get update
+        sudo apt-get install -y "${missing[@]}"
     fi
-
-    # asking for sudo before doing the installation thingy
-    if ! sudo -v; then
-        echo "couldn't get sudo permissions"
-        echo "ask an administrator to install the missing packages, then run this script again"
-        exit 1
-    fi
-
-    sudo apt-get update
-    sudo apt-get install -y "${missing[@]}"
 
 else
     echo "All dependencies are already installed!"
