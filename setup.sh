@@ -8,7 +8,7 @@
 # maybe add colours or whatever later
 
 
-# dry-run support: run with ./setup.sh --dry-run
+# dry-run support: run with ./setup.sh --dry-run DOES NOT WORK!!!
 DRY_RUN=0
 if [ "$1" = "--dry-run" ]; then
     DRY_RUN=1

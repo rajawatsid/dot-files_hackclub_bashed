@@ -4,6 +4,9 @@ I hope to get a lot of experience from this journey with hackclub
 
 This repository is made for the bashed hackclub program
 
+## Preview of how it should look like
+![Desktop Preview](assets/demo.png)
+
 ## What I'll be doing
 I'm going to be first making the dotfiles for my bspwm setup, then I'll add a `setup.sh` script that will essentially clone whatever is in this github repository and set up everyting (as the name implies).
 
@@ -81,5 +84,5 @@ curl -fsSL https://github.com/rajawatsid/dot-files_hackclub_bashed/releases/late
 
 ### Or straight from main
 ```
-curl -fsSL https://raw.githubusercontent.com/rajawatsid/dot-files_hackclub_bashed/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/rajawatsid/dot-files_hackclub_bashed/main/install.sh | DOTFILES_REF=main bash
 ```
