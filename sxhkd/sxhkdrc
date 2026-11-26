@@ -20,6 +20,10 @@ super + Tab
 super + alt + n
     nemo
 
+# power menu
+ctrl + super + q
+    ~/.config/bspwm/scripts/power-menu.sh
+
 # quit or restart bspwm
 super + alt + {q,r}
     bspc {quit, wm -r}
